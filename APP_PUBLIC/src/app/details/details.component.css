@@ -1,0 +1,13 @@
+h2{
+    margin-top: 5%;
+}
+button,a{
+    font-size: 25px;
+    background-color: #111111;
+    margin:20px,0,10px,0;
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+}
+p{
+    font-size: 22px;
+}

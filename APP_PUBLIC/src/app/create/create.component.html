@@ -1,0 +1,32 @@
+<h2>Create new Music item</h2>
+<form (ngSubmit)="createNewMusic(newMusic)" id="createform">
+
+   <table>
+    <tr>
+        <td><label for="songname">Name</label></td>
+        <td><input [(ngModel)]="newMusic.songname" id="songname" name="songname" required></td>
+    </tr>
+<tr>
+    <td> <label for="songlength">Length</label></td>
+    <td><input [(ngModel)]="newMusic.songlength" id="songlength" name="songlength" required></td>
+</tr>
+
+<tr>
+    <td><label for="description">Description</label></td>
+    <td><input [(ngModel)]="newMusic.description" id="description" name="description" required></td>
+</tr>
+    <tr>
+        <td><label for="genre">Genre</label></td>
+    <td><input [(ngModel)]="newMusic.genre" id="genre" name="genre" required></td>
+</tr>
+<tr>
+    <td><label for="name">Artist Name</label></td>
+   <td> <input [(ngModel)]="newMusic.artist.name" id="name" name="name" required></td>
+</tr>
+<tr>
+    <td><label for="birthdate">Birthdate</label></td>
+    <td><input [(ngModel)]="newMusic.artist.birthdate" id="birthdate" name="birthdate" required></td>
+</tr>
+    <tr><button type="submit">Submit</button></tr>
+    </table>
+</form>

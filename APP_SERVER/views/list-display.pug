@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 List Songs
+  ul My Song List 
+  each music in songs 
+    li  
+      a(href=`/music/${music._id}`)= music.songname
+  p 
+    a(href=`/new`) Add New Music

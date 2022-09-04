@@ -1,0 +1,10 @@
+<h2>Song Details </h2>
+<p><b>Song Name: </b>{{music.songname}}</p>
+<p><b>Song Period: </b>{{music.songlength}}</p>
+<p><b>Description: </b>{{music.description}}</p>
+<p><b>Genre: </b>{{music.genre}}</p>
+<p><b>Artist Name: </b>{{music.artist.name}}</p>
+<p><b>Birth Date</b>{{music.artist.birthdate}}</p>
+<button type="button" (click)='deleteMusic(music._id)'><a href='/'>Delete</a></button> &nbsp;
+
+<button type="button" (click)='redirectUpdate(music._id)'>Edit</button>

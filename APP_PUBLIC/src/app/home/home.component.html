@@ -1,0 +1,7 @@
+
+<div class="page">
+    <p>List of Music!</p>
+<ul>
+    <li *ngFor="let x of music;"><a routerLink="/music/{{x._id}}">{{x.songname}}</a></li>
+</ul>
+</div>

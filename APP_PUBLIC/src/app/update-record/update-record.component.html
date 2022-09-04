@@ -1,0 +1,23 @@
+<h2>Create new Music item</h2>
+<form action = "music/:musicId" method="PUT" >
+
+    <label for="songname">Name:&nbsp;</label>
+    <input [(ngModel)]="newMusic.songname" id="songname" name="songname" required><br><br>
+
+    <label for="songlength">Length:&nbsp;</label>
+    <input [(ngModel)]="newMusic.songlength" id="songlength" name="songlength" required><br><br>
+
+    <label for="description">Description:&nbsp;</label>
+    <input [(ngModel)]="newMusic.description" id="description" name="description" required><br><br>
+
+    <label for="genre">Genre:&nbsp;</label>
+    <input [(ngModel)]="newMusic.genre" id="genre" name="genre" required><br><br>
+
+    <label for="name">Artist Name:&nbsp;</label>
+    <input [(ngModel)]="newMusic.artist.name" id="name" name="name" required><br><br>
+
+    <label for="birthdate">Birthdate:&nbsp;</label>
+    <input [(ngModel)]="newMusic.artist.birthdate" id="birthdate" name="birthdate" required><br><br>
+
+    <button type="submit" (click)="updateMusicDetail(newMusic, newMusic._id)">Submit</button>
+</form>
